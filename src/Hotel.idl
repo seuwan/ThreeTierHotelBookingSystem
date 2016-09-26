@@ -1,0 +1,11 @@
+module corba {
+	module hotelbooking {
+		interface Hotel{
+			void setRoom(in string str,in long count,in long temp);
+			void usersInfo(in string str);
+			boolean judgeRoomID(in string str,in long count,in long temp);
+			string getHotelName(in long i);
+			boolean judgeVacancy(in string id,in string inDay,in string outDay);
+		};
+	};
+};
